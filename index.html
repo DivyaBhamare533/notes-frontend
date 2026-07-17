@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Notes App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AWS Notes Application</h1>
+
+        <!-- Save Note -->
+
+        <div class="card">
+
+            <h2>Save Note</h2>
+
+            <input
+                type="text"
+                id="filename"
+                placeholder="Enter filename (example: meeting.txt)"
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your note..."
+            ></textarea>
+
+            <button onclick="saveNote()">
+
+                Save Note
+
+            </button>
+
+        </div>
+
+        <!-- Read Note -->
+
+        <div class="card">
+
+            <h2>Read Note</h2>
+
+            <input
+                type="text"
+                id="readFilename"
+                placeholder="Enter filename"
+            >
+
+            <button onclick="readNote()">
+
+                Read Note
+
+            </button>
+
+            <h3>Result</h3>
+
+            <pre id="result"></pre>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
